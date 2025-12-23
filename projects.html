@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <title>DelaPeAña.dev | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="navbar navbar-expand-md fixed-top glass-nav border-bottom border-white-10">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html" aria-label="Go to home">
+          <span class="brand-mark">N</span>
+          <span class="brand-text glow-purple">DelaPeAña.dev</span>
+        </a>
+
+        <button class="navbar-toggler neon-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Open navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-2 align-items-center">
+            <li class="nav-item"><a class="nav-link nav-pill" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill active" href="./projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill" href="#contact" data-scroll>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main" class="pt-nav">
+      <section class="section py-5 py-lg-6">
+        <div class="container">
+          <header class="mb-5">
+            <p class="text-white-60 text-uppercase tracking-wide small mb-2">Selected work</p>
+            <h1 class="display-5 fw-bold font-mono text-white mb-3">Projects</h1>
+            <p class="text-white-70 lead mb-4 projects-lead">
+              Here you will find a selection of projects I have worked on. Each one blends thoughtful design
+              with reliable engineering to create useful digital products.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-neon btn-neon-outline" href="./index.html">
+                <i class="bi bi-house me-2" aria-hidden="true"></i>
+                Back Home
+              </a>
+              <a class="btn btn-neon btn-neon-primary btn-lg" href="mailto:walran207@gmail.com">
+                Let’s collaborate
+                <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </header>
+
+          <section>
+            <div id="projectsGrid" class="row g-4"></div>
+          </section>
+
+          <section id="contact" class="mt-5">
+            <div class="rounded-4 border border-white-10 bg-card p-4 p-md-5">
+              <p class="text-white-60 text-uppercase tracking-wide small mb-2">Next steps</p>
+              <h2 class="h1 font-mono fw-bold text-white mb-2">Let’s build something together</h2>
+              <p class="text-white-70 mb-4">
+                Ready to start a project or need help pushing an idea past the finish line? Tell me what you are
+                building and I will help map out the next version.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-neon btn-neon-primary btn-lg" href="mailto:walran207@gmail.com">Contact Me</a>
+                <a class="btn btn-neon btn-neon-outline btn-lg" href="./index.html">Return Home</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer border-top border-white-10 py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="text-white-60 small mb-0">© 2025 Kierven. All rights reserved.</p>
+        <div class="d-flex gap-4 small">
+          <a class="footer-link" href="./index.html#contact">Contact</a>
+          <a class="footer-link" href="./index.html#skills">Skills</a>
+          <a class="footer-link" href="./index.html">Home</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <div>
+              <p id="projectModalCategory" class="text-primary small font-mono text-uppercase tracking-wide mb-1"></p>
+              <h5 id="projectModalLabel" class="modal-title font-mono fw-bold text-white"></h5>
+              <p id="projectModalSubtitle" class="text-white-70 mb-0"></p>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body pt-0">
+            <div class="row g-4">
+              <div class="col-lg-7">
+                <div class="rounded-4 bg-media p-3">
+                  <div id="projectCarousel" class="carousel slide carousel-preview" aria-label="Project screenshots">
+                    <div class="carousel-inner" id="projectCarouselInner"></div>
+                  </div>
+
+                  <div class="carousel-toolbar" aria-label="Carousel controls">
+                    <button id="projectCarouselPrev" class="carousel-btn" type="button" aria-label="Previous image">
+                      <i class="bi bi-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="carousel-indicators carousel-indicators-dots" id="projectCarouselIndicators"></div>
+                    <button id="projectCarouselNext" class="carousel-btn" type="button" aria-label="Next image">
+                      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+
+                  <p class="text-white-60 small mt-3 mb-0">Tip: click the image to zoom.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="rounded-4 bg-panel p-4">
+                  <div class="d-flex flex-wrap gap-4 text-white-60 small font-mono mb-3">
+                    <div>
+                      <div class="text-white-40 text-uppercase tracking-wide">Timeline</div>
+                      <div id="projectModalTimeline" class="text-white"></div>
+                    </div>
+                    <div>
+                      <div class="text-white-40 text-uppercase tracking-wide">Role</div>
+                      <div id="projectModalRole" class="text-white"></div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <div class="text-white-60 text-uppercase tracking-wide small font-mono mb-2">What is it?</div>
+                    <p id="projectModalDetails" class="text-white-80 mb-0"></p>
+                  </div>
+
+                  <div class="mb-3">
+                    <div class="text-white-60 text-uppercase tracking-wide small font-mono mb-2">Tools &amp; Technologies</div>
+                    <div id="projectModalTags" class="d-flex flex-wrap gap-2"></div>
+                  </div>
+
+                  <div id="projectModalLinkWrap" class="pt-2 d-none">
+                    <a id="projectModalLink" class="btn btn-neon btn-neon-outline" href="#" target="_blank" rel="noreferrer">
+                      <i class="bi bi-globe me-2" aria-hidden="true"></i>
+                      Visit Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Zoom Modal -->
+    <div class="modal fade" id="zoomModal" tabindex="-1" aria-labelledby="zoomModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modal-dark">
+          <div class="modal-header border-0">
+            <h5 id="zoomModalLabel" class="modal-title font-mono fw-bold text-white">Zoom</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-0">
+            <div id="zoomCarousel" class="carousel slide carousel-preview" aria-label="Zoomed carousel">
+              <div class="carousel-inner" id="zoomCarouselInner"></div>
+            </div>
+
+            <div class="carousel-toolbar" aria-label="Carousel controls">
+              <button id="zoomCarouselPrev" class="carousel-btn" type="button" aria-label="Previous image">
+                <i class="bi bi-chevron-left" aria-hidden="true"></i>
+              </button>
+              <div class="carousel-indicators carousel-indicators-dots" id="zoomCarouselIndicators"></div>
+              <button id="zoomCarouselNext" class="carousel-btn" type="button" aria-label="Next image">
+                <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/site.js"></script>
+    <script src="./assets/js/projects.js"></script>
+  </body>
+</html>

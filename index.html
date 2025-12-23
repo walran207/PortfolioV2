@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <title>DelaPeña.dev | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/site.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="navbar navbar-expand-md fixed-top glass-nav border-bottom border-white-10">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html" aria-label="Go to home">
+          <span class="brand-mark">N</span>
+          <span class="brand-text glow-purple">DelaPeña.dev</span>
+        </a>
+
+        <button class="navbar-toggler neon-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Open navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-2 align-items-center">
+            <li class="nav-item"><a class="nav-link nav-pill active" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill" href="./projects.html">Projects</a></li>
+            <li class="nav-item"><a id="navContactLink" class="nav-link nav-pill" href="#contact" data-scroll>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main" class="pt-nav">
+      <header class="hero-section position-relative overflow-hidden">
+        <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+        <div class="container position-relative z-1">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-9">
+              <div class="hero-avatar mx-auto mb-4">
+                <img src="./public/Profile.jpg" alt="Profile photo" class="hero-avatar-img" loading="lazy" />
+              </div>
+
+              <p class="hero-kicker font-mono text-uppercase mb-3">Cyberpunk minimalism</p>
+              <h1 class="display-4 fw-bold font-mono text-white mb-2">
+                Hey, I’m <span class="glow-purple">Kierven</span>
+              </h1>
+              <h2 class="h1 fw-bold font-mono text-white-80 mb-4">
+                A <span class="glow-cyan">Software Developer</span>
+              </h2>
+              <p class="lead text-white-70 mx-auto hero-lead">
+                A <span class="text-white fw-semibold">fullstack developer</span> with solid foundations in design,
+                passionate about crafting seamless user experiences. I thrive at the intersection of creativity and functionality.
+              </p>
+
+              <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                <a class="btn btn-neon btn-neon-primary btn-lg" href="#contact" data-scroll>
+                  <i class="bi bi-envelope me-2" aria-hidden="true"></i>
+                  Contact Me
+                </a>
+                <a class="btn btn-neon btn-neon-outline btn-lg" href="./projects.html">
+                  <i class="bi bi-code-slash me-2" aria-hidden="true"></i>
+                  View Projects
+                </a>
+              </div>
+
+              <div class="d-flex gap-4 justify-content-center mt-4 text-white-70">
+                <a class="social-link" href="https://github.com/nadhir" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                </a>
+                <a class="social-link" href="https://linkedin.com/in/nadhir" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="social-link" href="https://twitter.com/nadhir" target="_blank" rel="noreferrer" aria-label="Twitter">
+                  <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section-divider"></div>
+
+      <section id="skills" class="section py-5 py-lg-6">
+        <div class="container">
+          <div class="row align-items-end g-4 mb-4 mb-lg-5">
+            <div class="col-lg-7">
+              <h2 class="h1 fw-bold font-mono glow-purple mb-3">Building Digital Experiences</h2>
+              <p class="text-white-70 mb-0">
+                I specialize in creating stunning user interfaces and developing high-quality applications that stand out.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <a class="btn btn-neon btn-neon-outline" href="./projects.html">
+                View My Projects <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="skill-card h-100">
+                <div class="skill-card-icon">
+                  <i class="bi bi-palette2" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 font-mono fw-bold text-white mb-2">What I can do</h3>
+                <p class="text-white-70 small mb-3">
+                  I can help develop solutions that will help you grow your business.
+                </p>
+                <ul class="list-unstyled text-white-60 small mb-0">
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>UI/UX Design</span></li>
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>Fullstack Web Development</span></li>
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>Mobile App Development</span></li>
+                  <li class="d-flex gap-2 align-items-start"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>API Integration</span></li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="skill-card h-100">
+                <div class="skill-card-icon">
+                  <i class="bi bi-lightning-charge" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 font-mono fw-bold text-white mb-2">Tools I Use</h3>
+                <p class="text-white-70 small mb-3">
+                  I use the latest tech and technologies to build functional and scalable products.
+                </p>
+                <ul class="list-unstyled text-white-60 small mb-0">
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-purple" aria-hidden="true"></i><span>Frontend: HTML, CSS, JavaScript</span></li>
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-purple" aria-hidden="true"></i><span>Backend: Node.js, PHP, SQL</span></li>
+                  <li class="d-flex gap-2 align-items-start"><i class="bi bi-check2 text-purple" aria-hidden="true"></i><span>Design: Figma, Photoshop</span></li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="skill-card h-100">
+                <div class="skill-card-icon">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5 font-mono fw-bold text-white mb-2">UI/UX Design</h3>
+                <p class="text-white-70 small mb-3">
+                  I am passionate about creating beautiful and user-centric design. I can help design clean and modern user interfaces.
+                </p>
+                <ul class="list-unstyled text-white-60 small mb-0">
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>User-Centered Design</span></li>
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>Modern &amp; Clean UI</span></li>
+                  <li class="d-flex gap-2 align-items-start mb-2"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>Responsive Layouts</span></li>
+                  <li class="d-flex gap-2 align-items-start"><i class="bi bi-check2 text-cyan" aria-hidden="true"></i><span>Wireframes &amp; Prototypes</span></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section py-5 py-lg-6">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="cta-orbs" aria-hidden="true"></div>
+
+            <div class="row g-4 align-items-stretch position-relative z-1">
+              <div class="col-lg-7">
+                <p class="text-white-70 font-mono text-uppercase cta-kicker mb-3">Let’s collaborate</p>
+                <h2 class="display-6 fw-bold font-mono text-white mb-3">
+                  <span class="glow-purple d-block">Bringing your ideas to life.</span>
+                  Let’s turn your vision into reality
+                </h2>
+                <p class="text-white-70 mb-4">
+                  Have a project in mind or just want to chat? Reach out and let’s craft an experience that feels effortless and futuristic.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a class="btn btn-neon btn-neon-primary btn-lg" href="mailto:walran207@gmail.com">
+                    Contact Me
+                  </a>
+                  <a class="btn btn-neon btn-neon-outline btn-lg" href="./projects.html">
+                    View Projects
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="connect-card h-100">
+                  <p class="text-white-70 font-mono text-uppercase cta-kicker mb-3">Connect with me</p>
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <a class="contact-tile" href="mailto:walran207@gmail.com">
+                        <span class="contact-icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+                        <span class="contact-meta">
+                          <span class="contact-kicker">Reach out</span>
+                          <span class="contact-label">Email</span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a class="contact-tile" href="https://github.com/nadhir" target="_blank" rel="noreferrer">
+                        <span class="contact-icon"><i class="bi bi-github" aria-hidden="true"></i></span>
+                        <span class="contact-meta">
+                          <span class="contact-kicker">Reach out</span>
+                          <span class="contact-label">GitHub</span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a class="contact-tile" href="https://linkedin.com/in/nadhir" target="_blank" rel="noreferrer">
+                        <span class="contact-icon"><i class="bi bi-linkedin" aria-hidden="true"></i></span>
+                        <span class="contact-meta">
+                          <span class="contact-kicker">Reach out</span>
+                          <span class="contact-label">LinkedIn</span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a class="contact-tile" href="https://twitter.com/nadhir" target="_blank" rel="noreferrer">
+                        <span class="contact-icon"><i class="bi bi-twitter-x" aria-hidden="true"></i></span>
+                        <span class="contact-meta">
+                          <span class="contact-kicker">Reach out</span>
+                          <span class="contact-label">Twitter</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer border-top border-white-10 py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="text-white-60 small mb-0">© 2025 Kierven. All rights reserved.</p>
+        <div class="d-flex gap-4 small">
+          <a class="footer-link" href="#">Privacy</a>
+          <a class="footer-link" href="#">Terms</a>
+          <a class="footer-link" href="#contact" data-scroll>Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/site.js"></script>
+  </body>
+
+</html>
