@@ -4,7 +4,7 @@ const projects = [
     category: "Product Design",
     title: "GradeKo",
     description: "A platform for parents to connect with teachers and follow student progress in real time.",
-    subtitle: "A platform for parents to connect with teachers.",
+    subtitle: "A platform for student and parents to connect with teachers.",
     details:
       "GradeKo grading System is a comprehensive platform designed to help students, teachers, administrators, and parents efficiently manage and track grades. It provides real-time access to students' performance, allowing all users to monitor grades throughout the term and track final grades seamlessly.",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MYSQL"],
@@ -31,7 +31,7 @@ const projects = [
     title: "Car-Go",
     description:
       "Car-go is a streamlined car rental platform that simplifies bookings, payments, and due date management for a hassle-free experience.",
-    subtitle: "An inspiration library powered by collaborative bookmarking.",
+    subtitle: "A plaform to easily booked cars.",
     details:
       "Car-go is an innovative car rental system designed to streamline transactions for both customers and owners, offering a seamless online experience with secure payment options and hassle-free due date management.",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MYSQL"],
@@ -60,8 +60,8 @@ const projects = [
     id: "equiptrack",
     category: "DevOps",
     title: "EquipTrack",
-    description: "Blueprints and scripts to spin up Docker and Kubernetes clusters on any cloud in minutes.",
-    subtitle: "Infrastructure playbooks for container-first teams.",
+    description: "A mobile and web-based system that simplifies tracking, monitoring, and managing school equipment in real time.",
+    subtitle: "Smart equipment tracking for efficient school resource management.",
     details:
       "EquipTrack is a robust system designed to manage and record school equipment, allowing users to efficiently track the availability, condition, and usage of various resources. It streamlines the process of monitoring equipment, ensuring proper allocation and timely maintenance.",
     tags: ["Flutterflow", "Dart", "Firebase"],
@@ -84,8 +84,8 @@ const projects = [
     id: "mindlink",
     category: "Platform",
     title: "MindLink",
-    description: "A dashboard that unifies developer bookmarks, tracking tools, and documentation.",
-    subtitle: "A personal control hub for high-output developers.",
+    description: "Your personalized companion for smarter learning.",
+    subtitle: "A student-focused platform that provides personalized study tools, task management, and real-time academic support to boost productivity and learning outcomes.",
     details:
       "MindLink is an innovative student helper app designed to support learners by providing personalized study tools, resources, and real-time assistance. It offers features like task management, study reminders, and interactive learning aids, empowering students to enhance their productivity and academic success.",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MYSQL"],
@@ -109,8 +109,8 @@ const projects = [
     id: "reneweco",
     category: "Platform",
     title: "RenewEco",
-    description: "A dashboard that unifies developer bookmarks, tracking tools, and documentation.",
-    subtitle: "A personal control hub for high-output developers.",
+    description: "A mobile and web-based platform that helps cities and municipalities schedule waste collection, manage customer data, and track services in real time for improved efficiency and public satisfaction.",
+    subtitle: "Smart solutions for efficient and sustainable waste management.",
     details:
       "Renew Eco is a specialized system designed to assist municipalities and cities in scheduling waste collection and efficiently tracking customer information. It streamlines garbage management, ensuring timely pickups and providing real-time tracking for improved service delivery and customer satisfaction.",
     tags: ["Flutterflow", "Dart", "Firebase"],
@@ -131,8 +131,8 @@ const projects = [
     id: "styleTransfer",
     category: "Platform",
     title: "NeuralStyleTransfer",
-    description: "A dashboard that unifies developer bookmarks, tracking tools, and documentation.",
-    subtitle: "A personal control hub for high-output developers.",
+    description: "A mobile-based platform that uses neural networks to apply artistic styles to images in real time, enabling users to instantly create visually stunning artworks on the go.",
+    subtitle: "Transform photos into art with real-time neural styling.",
     details:
       "Mobile-based Real-Time Neural Style Transfer is an innovative system that leverages advanced neural networks to apply artistic styles to images in real time. With seamless mobile integration, users can instantly transform their photos into unique artworks, enhancing creativity on the go.",
     tags: ["Flutterflow", "Dart", "Firebase"],
