@@ -216,13 +216,13 @@ function setModalProject(project) {
 
   const linkWrap = document.getElementById("projectModalLinkWrap");
   const linkEl = document.getElementById("projectModalLink");
-  if (project.link) {
+/*   if (project.link) {
     linkWrap.classList.remove("d-none");
     linkEl.href = project.link;
   } else {
     linkWrap.classList.add("d-none");
     linkEl.href = "#";
-  }
+  } */
 
   const slides = (project.gallery?.length ? project.gallery : [project.image]).map(assetPath);
   const inner = document.getElementById("projectCarouselInner");
