@@ -1,7 +1,7 @@
 const projects = [
   {
     id: "gradeko",
-    category: "Product Design",
+    category: "Platform",
     title: "GradeKo",
     description: "A platform for parents to connect with teachers and follow student progress in real time.",
     subtitle: "A platform for student and parents to connect with teachers.",
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     id: "cargo",
-    category: "Productivity",
+    category: "Platform",
     title: "Car-Go",
     description:
       "Car-go is a streamlined car rental platform that simplifies bookings, payments, and due date management for a hassle-free experience.",
@@ -58,7 +58,7 @@ const projects = [
   },
   {
     id: "equiptrack",
-    category: "DevOps",
+    category: "Platform",
     title: "EquipTrack",
     description: "A mobile and web-based system that simplifies tracking, monitoring, and managing school equipment in real time.",
     subtitle: "Smart equipment tracking for efficient school resource management.",
@@ -103,7 +103,7 @@ const projects = [
       "MindLink/8.png?auto=format&fit=crop&w=1400&q=80",
       "MindLink/9.png?auto=format&fit=crop&w=1400&q=80",
     ],
-    link: "https://nadhir.dev/projects/atlas",
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
   },
   {
     id: "reneweco",
@@ -125,7 +125,7 @@ const projects = [
       "RenewEco/5.png?auto=format&fit=crop&w=1400&q=80",
       "RenewEco/6.png?auto=format&fit=crop&w=1400&q=80",
     ],
-    link: "https://nadhir.dev/projects/atlas",
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
   },
   {
     id: "styleTransfer",
@@ -148,8 +148,107 @@ const projects = [
       "StyleTransfer/6.png??auto=format&fit=crop&w=1400&q=80",
       "StyleTransfer/7.png??auto=format&fit=crop&w=1400&q=80",
     ],
-    link: "https://nadhir.dev/projects/atlas",
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
   },
+
+  {
+    id: "automatedemail",
+    category: "Automation",
+    title: "Automated Email Receipt Capture",
+    description: "A streamlined automation solution integrating Email by Zapier, OpenAI, Google Sheets, and Slack that intelligently captures receipts from email, extracts key financial details using AI, logs expenses to a centralized budget tracker, and delivers real-time notifications to your team.",
+    subtitle: "Intelligent expense management that automatically captures receipts, extracts details with AI, and logs them to your budget tracker.",
+    details:
+      "This enterprise-level expense management automation eliminates manual receipt tracking and reduces data entry overhead by capturing incoming receipt emails to a dedicated user-specific inbox, intelligently filtering for expense-related content (amount, total, receipt, invoice, purchase, cost), and extracting key transaction details using OpenAI GPT-4o-mini AI language processing. The workflow automatically logs structured expense data to Google Sheets for centralized budget analysis and reporting, then notifies your operations team via Slack with complete transaction summaries and categorization. The system ensures consistent data flow across platforms and eliminates gaps in expense tracking processes.",
+    tags: ["Zapier", "Google Sheets", "Slack", "OpenAI"],
+    timeline: "JANUARY 2026",
+    role: "Automation Workflow",
+    image: "Budget/1.png?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      "Budget/1.png??auto=format&fit=crop&w=1400&q=80",
+      "Budget/budget.mp4??auto=format&fit=crop&w=1400&q=80"
+    ],
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
+  },
+  {
+    id: "automatedrepurposing",
+    category: "Automation",
+    title: "Automated Audio-to-Multi-Platform Content Distribution",
+    description: "The system automatically detects new mp3 files uploaded to Google Drive, transcribes the audio using AssemblyAI, generates two distinct SEO-optimized blog posts with accompanying social media posts using AI (GPT-4o-mini), logs all content to Google Sheets for tracking, and publishes to Instagram, LinkedIn, and Ghost simultaneously with a Slack notification to your team.",
+    subtitle: "Transform audio files into SEO-optimized blog posts and distribute them across Instagram, LinkedIn, Ghost, and Google Sheets automatically.",
+    details:
+      "This enterprise-level content automation workflow eliminates manual transcription and content creation bottlenecks by capturing new audio files from Google Drive, intelligently filtering for mp3 files, and transcribing them using AssemblyAI's speech-to-text API. The workflow leverages OpenAI's GPT-4o-mini AI language model to generate two professionally-written blog posts with SEO-optimized headlines, structured body content, actionable conclusions, and key takeaways—all complete with platform-specific social media posts (Instagram and LinkedIn versions). The system logs all generated content to Google Sheets for centralized content management and reporting, then simultaneously publishes Blog Post #1 to Instagram and LinkedIn via Path A, while Publishing Blog Post #2 to Ghost CMS and notifying your content team via Slack in Path B. The intelligent validation filter ensures only quality content (non-empty headlines and body text) proceeds through the publishing pipeline, maintaining consistency across all platforms and eliminating gaps in your content distribution process.",
+    tags: ["Google Drive","Assembly AI", "Google Sheets", "Slack", "OpenAI","Instagram","LinkedIn","Ghost CMS"],
+    timeline: "JANUARY 2026",
+    role: "Automation Workflow",
+    image: "Reporpusing/1.png??auto=format&fit=crop&w=1400&q=80",
+    gallery: [
+      "Reporpusing/1.png??auto=format&fit=crop&w=1400&q=80",
+      "Reporpusing/2.png??auto=format&fit=crop&w=1400&q=80",
+      "Reporpusing/3.png??auto=format&fit=crop&w=1400&q=80",
+      "Reporpusing/reporpusing.mp4??auto=format&fit=crop&w=1400&q=80"
+    ],
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
+  },
+  {
+    id: "automatedcourse",
+    category: "Automation",
+    title: "Zapier Course Registration Automation with student Onboarding",
+    description: "The system automatically captures student registrations from JotForm, creates contact records in ClickFunnels, enrolls students in courses, manages email list segmentation, sends personalized welcome communications with scheduling links, and provides real-time team notifications via Slack.",
+    subtitle: "Streamline student registrations across ClickFunnels, ActiveCampaign, Gmail, and Slack with zero manual intervention.",
+    details:
+      "This enterprise-level course registration automation eliminates manual enrollment processes and reduces administrative overhead by capturing incoming registration submissions from JotForm, automatically creating and updating student contact records in ClickFunnels CRM, and immediately enrolling them in designated courses. The workflow syncs student data across your email marketing platform by adding contacts to segmented lists in ActiveCampaign and applying campaign-specific tags for targeted follow-up. Personalized welcome emails are automatically sent via Gmail with embedded Calendly scheduling links to streamline student onboarding calls, while your operations team receives real-time Slack notifications with complete registration summaries. The system ensures consistent data flow across platforms and eliminates gaps in student enrollment processes.",
+    tags: ["Jotform","ClickFunnels", "Google Sheets", "ActiveCampaign", "Gmail","Slack"],
+    timeline: "JANUARY 2026",
+    role: "Automation Workflow",
+    image: "Course/1.png??auto=format&fit=crop&w=1400&q=80",
+    gallery: [
+      "Course/1.png??auto=format&fit=crop&w=1400&q=80",
+      "Course/2.png??auto=format&fit=crop&w=1400&q=80",
+      "Course/course.mp4??auto=format&fit=crop&w=1400&q=80"
+    ],
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
+  },
+  {
+    id: "automatedleadmanagement",
+    category: "Automation",
+    title: "Intelligent Lead Scoring & Automated Multi-Channel Nurture Workflow ",
+    description: "The system captures lead submissions, uses AI to analyze and score lead quality, then automatically routes HIGH-tier prospects to your sales team while nurturing MEDIUM/LOW-tier leads through email sequences and centralized tracking.",
+    subtitle: "Automatically qualify leads with AI analysis and route them to the right team based on quality tier.",
+    details:
+      "This intelligent lead management automation eliminates manual qualification bottlenecks by capturing incoming lead survey submissions from Typeform and leveraging OpenAI GPT-4o mini to instantly analyze lead quality across multiple dimensions (budget, timeline, company size, engagement level, and industry alignment). The workflow assigns a quality score (0-100) and tier classification (HIGH/MEDIUM/LOW) using structured AI assessment criteria. HIGH-tier prospects (75-100 score) trigger immediate action: real-time Slack notifications to your sales team, automatic contact creation in HubSpot with lead details, and personalized outreach emails via Gmail. MEDIUM and LOW-tier leads receive nurture emails and are logged to Zapier Tables for future campaign targeting and analysis. The system ensures consistent lead routing, eliminates manual review time, and provides real-time visibility into pipeline health across your entire technology stack.",
+    tags: ["TypeForm","OpenAI", "Slack", "Hubspot", "Gmail","Tables"],
+    timeline: "JANUARY 2026",
+    role: "Automation Workflow",
+    image: "LeadManagement/1.png??auto=format&fit=crop&w=1400&q=80",
+    gallery: [
+      "LeadManagement/1.png??auto=format&fit=crop&w=1400&q=80",
+      "LeadManagement/2.png??auto=format&fit=crop&w=1400&q=80",
+      "LeadManagement/LeadManagement.mp4??auto=format&fit=crop&w=1400&q=80"
+    ],
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
+  },
+
+    {
+    id: "automatedtools",
+    category: "Automation",
+    title: "Automated Tools Access Request & Approval Tracking System",
+    description: "This workflow captures approval actions from a Table button click, updates the approval request record with status and timestamp, and instantly notifies your finance team via Slack with request details.",
+    subtitle: "Automated approval tracking from Zapier Tables with instant team notifications via Slack.",
+    details:
+      "This approval automation streamlines your request management process by capturing button-click approvals directly from your Zapier Table, automatically updating the corresponding approval request record with Approved status and a precise timestamp. The system immediately notifies your finance team through Slack with complete request context, including the request amount and requester name, ensuring visibility across your organization. This eliminates manual status updates and email chains, creating a transparent, audit-ready approval trail while keeping stakeholders informed in real-time across your platforms.",
+    tags: ["TypeForm","OpenAI", "Slack","Gmail","Tables"],
+    timeline: "JANUARY 2026",
+    role: "Automation Workflow",
+    image: "Tools/1.png??auto=format&fit=crop&w=1400&q=80",
+    gallery: [
+      "Tools/1.png??auto=format&fit=crop&w=1400&q=80",
+      "Tools/2.png??auto=format&fit=crop&w=1400&q=80",
+      "Tools/3.png??auto=format&fit=crop&w=1400&q=80",
+      "Tools/tools.mp4??auto=format&fit=crop&w=1400&q=80"
+    ],
+    link: "https://walran207.github.io/PortfolioV2/projects.html",
+  },
+
 ];
 
 function assetPath(path) {
@@ -200,6 +299,13 @@ function renderProjectsGrid() {
   });
 }
 
+// Helper function to check if a file path is a video
+function isVideo(path) {
+  // Removes query parameters (like ?auto=format) before checking extension
+  const cleanPath = path.split('?')[0];
+  return /\.(mp4|webm|ogg|mov)$/i.test(cleanPath);
+}
+
 function setModalProject(project) {
   const modalEl = document.getElementById("projectModal");
   if (!modalEl) return;
@@ -216,28 +322,40 @@ function setModalProject(project) {
 
   const linkWrap = document.getElementById("projectModalLinkWrap");
   const linkEl = document.getElementById("projectModalLink");
-/*   if (project.link) {
-    linkWrap.classList.remove("d-none");
-    linkEl.href = project.link;
-  } else {
-    linkWrap.classList.add("d-none");
-    linkEl.href = "#";
-  } */
 
+  // Determine slides
   const slides = (project.gallery?.length ? project.gallery : [project.image]).map(assetPath);
   const inner = document.getElementById("projectCarouselInner");
   const indicators = document.getElementById("projectCarouselIndicators");
   const prevBtn = document.getElementById("projectCarouselPrev");
   const nextBtn = document.getElementById("projectCarouselNext");
+  
   inner.innerHTML = "";
   if (indicators) indicators.innerHTML = "";
 
+  // Logic to handle both Images and Videos
   slides.forEach((src, idx) => {
-    const item = elFromHTML(`
-      <div class="carousel-item ${idx === 0 ? "active" : ""}">
+    let mediaContent = "";
+
+    if (isVideo(src)) {
+      // If it's a video, use the <video> tag
+      mediaContent = `
+        <div class="video-container" style="background: #000; border-radius: 1rem; overflow: hidden;">
+          <video src="${src}" controls class="w-100" style="max-height: 46vh; display: block;">
+            Your browser does not support the video tag.
+          </video>
+        </div>`;
+    } else {
+      // If it's an image, keep your existing zoom button and <img> tag
+      mediaContent = `
         <button type="button" class="carousel-zoom-btn" data-zoom-index="${idx}" aria-label="Zoom image ${idx + 1}">
           <img src="${src}" alt="${project.title} screen ${idx + 1}" loading="lazy" />
-        </button>
+        </button>`;
+    }
+
+    const item = elFromHTML(`
+      <div class="carousel-item ${idx === 0 ? "active" : ""}">
+        ${mediaContent}
       </div>
     `);
     inner.appendChild(item);
@@ -284,7 +402,8 @@ function setModalProject(project) {
   if (prevBtn) prevBtn.onclick = () => carousel.prev();
   if (nextBtn) nextBtn.onclick = () => carousel.next();
 
-  inner.querySelectorAll("[data-zoom-index]").forEach((btn) => {
+  // Re-attach zoom events only to images (skipping videos)
+  inner.querySelectorAll(".carousel-zoom-btn").forEach((btn) => {
     btn.addEventListener("click", () => openZoomModal(slides, Number(btn.getAttribute("data-zoom-index") || 0)));
   });
 }
@@ -295,14 +414,29 @@ function openZoomModal(slides, startIndex) {
   const indicators = document.getElementById("zoomCarouselIndicators");
   const prevBtn = document.getElementById("zoomCarouselPrev");
   const nextBtn = document.getElementById("zoomCarouselNext");
+  
   inner.innerHTML = "";
   if (indicators) indicators.innerHTML = "";
 
   slides.forEach((src, idx) => {
+    let mediaHtml = "";
+
+    if (isVideo(src)) {
+      // Logic for Video in Zoom View
+      mediaHtml = `
+        <video src="${src}" controls class="w-100" style="max-height: 80vh; border-radius: 1rem; outline: none;">
+          Your browser does not support the video tag.
+        </video>`;
+    } else {
+      // Logic for Image in Zoom View
+      mediaHtml = `
+        <img src="${src}" alt="Zoomed project visual" class="w-100" style="max-height: 70vh; object-fit: contain; border-radius: 1rem;" />`;
+    }
+
     const item = elFromHTML(`
       <div class="carousel-item ${idx === startIndex ? "active" : ""}">
         <div class="d-flex justify-content-center align-items-center bg-black rounded-4 p-2">
-          <img src="${src}" alt="Zoomed project visual" class="w-100" style="max-height: 70vh; object-fit: contain; border-radius: 1rem;" />
+          ${mediaHtml}
         </div>
       </div>
     `);
