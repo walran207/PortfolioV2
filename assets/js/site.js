@@ -24,13 +24,31 @@ function setupContactNavActive() {
   const contact = document.getElementById("contact");
   if (!contact) return;
 
-  const navLinks = [document.getElementById("navContactLink")].filter(Boolean);
-
+  const navLinks = Array.from(document.querySelectorAll(".nav-link.nav-pill"));
   if (!navLinks.length) return;
+
+  const contactLinks = navLinks.filter((link) => link.getAttribute("href") === "#contact");
+  if (!contactLinks.length) return;
+
+  const defaultLink =
+    navLinks.find((link) => {
+      const href = link.getAttribute("href") || "";
+      if (!href || href.startsWith("#")) return false;
+      const current = window.location.pathname.split("/").pop() || "index.html";
+      return href.replace("./", "") === current;
+    }) || navLinks[0];
+
+  const setActiveLink = (activeLink) => {
+    navLinks.forEach((link) => link.classList.toggle("active", link === activeLink));
+  };
 
   const observer = new IntersectionObserver(
     ([entry]) => {
-      navLinks.forEach((el) => el.classList.toggle("active", entry.isIntersecting));
+      if (entry.isIntersecting) {
+        setActiveLink(contactLinks[0]);
+        return;
+      }
+      setActiveLink(defaultLink);
     },
     { threshold: 0.3 },
   );

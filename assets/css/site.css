@@ -359,6 +359,17 @@ button:focus-visible,
   font-size: 1.25rem;
   color: var(--purple);
 }
+.language-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.language-icon i {
+  font-size: 1.15rem;
+}
 
 /* Contact CTA */
 .cta-panel {
@@ -501,10 +512,11 @@ button:focus-visible,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 400ms ease;
+  transition: transform 400ms ease, filter 300ms ease;
 }
 .project-card:hover .project-card-media img {
   transform: scale(1.03);
+  filter: blur(3px);
 }
 .project-card-media::after {
   content: "";
@@ -520,6 +532,14 @@ button:focus-visible,
   inset: auto 0 0 0;
   padding: 1.25rem;
   z-index: 1;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+.project-card:hover .project-card-over,
+.project-card:focus-visible .project-card-over {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .tag-pill {
@@ -644,4 +664,3 @@ button:focus-visible,
   border-radius: 1rem;
   cursor: zoom-in;
 }
-
